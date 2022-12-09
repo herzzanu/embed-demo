@@ -2,10 +2,12 @@
 
 <h1>Hello World!</h1>
 
+{{#unless this.isEmbedded}}
+  <h2>This is not embedded</h2>
+{{/unless}}
+
 <LinkTo @route='index'>Home</LinkTo>
 <LinkTo @route='hello'>Hello</LinkTo>
 <LinkTo @route='world'>World</LinkTo>
 
 {{outlet}}
-
-{{log this.foo}}
