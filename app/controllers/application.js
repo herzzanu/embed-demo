@@ -6,6 +6,9 @@ export default class ApplicationController extends Controller {
   @service embedded;
 
   get isEmbedded() {
+    console.log('App host: ', ENV.APP.appHost);
+    console.log('Origin host: ', this.embedded.originHost);
+
     return (
       this.embedded.originHost !== ENV.APP.appHost &&
       ENV.environment === 'production'
