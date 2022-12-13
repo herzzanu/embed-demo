@@ -8,6 +8,7 @@ module.exports = function (defaults) {
       crossorigin: 'anonymous',
     },
     fingerprint: {
+      enabled: true,
       prepend: 'https://embed-demo-nine.vercel.app/',
     },
   });
